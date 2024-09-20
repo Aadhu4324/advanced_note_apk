@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "463742409881",
+    "project_id": "noteapk-4f5da",
+    "storage_bucket": "noteapk-4f5da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463742409881:android:3a7c7c934e2e1b8a38ac08",
+        "android_client_info": {
+          "package_name": "com.androi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMZt7jmQhJa7fDiq0ayma8xE3UWe_5ajs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463742409881:android:823bf9ff875cf55938ac08",
+        "android_client_info": {
+          "package_name": "com.example.firebase_second"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMZt7jmQhJa7fDiq0ayma8xE3UWe_5ajs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -15,17 +15,17 @@ class NoteServices {
     return note;
   }
 
-  Stream<List<NoteModel>> getAllUserNotes() {
-    return _taskServices.snapshots().map(
-      (event) { 
-        return event.docs.map(
-          (e) {
-            return NoteModel.fromJson(e);
-          },
-        ).toList();
-      },
-    );
-  }
+  // Stream<List<NoteModel>> getAllUserNotes() {
+  //   return _taskServices.snapshots().map(
+  //     (event) {
+  //       return event.docs.map(
+  //         (e) {
+  //           return NoteModel.fromJson(e);
+  //         },
+  //       ).toList();
+  //     },
+  //   );
+  // }
 
   //update
   Future<void> updateNote(NoteModel note) async {

@@ -32,11 +32,11 @@ class _ScreenHomeState extends State<ScreenHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor:Color.fromARGB(215, 255, 255, 255),
+        backgroundColor: const Color.fromARGB(215, 255, 255, 255),
         appBar: AppBar(
           centerTitle: true,
-          backgroundColor: Color.fromARGB(255, 43, 178, 208),
-          title: Text("HomePage"),
+          backgroundColor: const Color.fromARGB(255, 43, 178, 208),
+          title: const Text("HomePage"),
         ),
         body: Column(
           children: [
@@ -61,7 +61,7 @@ class _ScreenHomeState extends State<ScreenHome> {
                       ],
                     );
                   } else {
-                    return Text("Error");
+                    return const Text("Error");
                   }
                 }
               },
@@ -99,17 +99,20 @@ class _ScreenHomeState extends State<ScreenHome> {
                             child: ListTile(
                               trailing: IconButton(
                                   onPressed: () {
-                                    _noteservices.deleteNote(notes[index].id.toString());
+                                    _noteservices
+                                        .deleteNote(notes[index].id.toString());
                                   },
-                                  icon: Icon(
+                                  icon: const Icon(
                                     Icons.delete,
                                     color: Colors.red,
                                   )),
                               onTap: () => Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) =>
-                                        ScreenView(note: notes[index],userId: userID.toString(),),
+                                    builder: (context) => ScreenView(
+                                      note: notes[index],
+                                      userId: userID.toString(),
+                                    ),
                                   )),
                               leading: CircleAvatar(
                                 child: Text('${index + 1}'),
@@ -130,7 +133,7 @@ class _ScreenHomeState extends State<ScreenHome> {
                         itemCount: notes.length,
                       );
                     } else {
-                      return Center(
+                      return const Center(
                           child: CustomText(data: "No Notes Available"));
                     }
                   } else {
@@ -153,6 +156,6 @@ class _ScreenHomeState extends State<ScreenHome> {
           },
           child: const Icon(Icons.add),
         ),
-        drawer: ScreenDrawer());
+        drawer: const ScreenDrawer());
   }
 }
